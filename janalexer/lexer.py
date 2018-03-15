@@ -28,7 +28,7 @@ class JanaLexer(RegexLexer):
             # keywords: go before method names to avoid lexing "throw new XYZ"
             # as a method signature
             (r'(assert|break|case|catch|continue|default|do|else|finally|for|'
-             r'if|goto|instanceof|new|return|switch|this|throw|try|while)\b',
+             r'if|goto|instanceof|new|return|switch|this|throw|try|while|repeat|until)\b',
              Keyword),
             # method names
             (r'((?:(?:[^\W\d]|\$)[\w.\[\]$<>]*\s+)+?)*'  # return arguments
