@@ -10,7 +10,24 @@ a forked version of the original Java lexer from the pygments project.
 
 ## Installing 
 
+First, clone the repository using:
+
+    git clone git@github.com:maximaximal/pygments-jana.git
+	cd pygments-jana
+
+After that, choose an installation method:
+
+### End-User Mode
+
+Using this method, the software can be used directly.
+
+    sudo python setup.py develop
+
 ### Developer Mode
+
+This mode enables code changes directly in the repository, which propagate 
+to the lexer called by `pygmentize`. It is therefore more suited for 
+development.
 
     sudo python setup.py develop
 
