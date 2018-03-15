@@ -3,6 +3,10 @@
 This project aims to implement a pygments plugin to highlight
 the algorithm design language [Jana](https://de.wikipedia.org/wiki/Jana_(Informatik)).
 
+## Example
+
+![Example of the highlighting engine](example.png)
+
 ## Installing 
 
 ### Developer Mode
