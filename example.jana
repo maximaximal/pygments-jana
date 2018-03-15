@@ -1,0 +1,75 @@
+switch (ausdruck) {
+    case ausdruck1: {
+	Anweisungen
+    }
+    case ausdruck2: {
+	Anweisungen
+    }
+    … Unicode Elipsis can be used.
+    ... Dots can also be used.
+    default: {
+	Anweisungen
+    }
+}
+
+if (ausdruck) {
+    Anweisungen
+}
+if (ausdruck1) {
+    Anweisungen
+} else if (ausdruck2) {
+    Anweisungen
+} else {
+    Anweisungen
+}
+
+switch (zahl) {
+    case 0:
+	{ s= "0" }
+    case <0:
+	{ s= "negativ" }
+    case >0:
+	{ s= "positiv" }
+}
+
+// i nimmt nacheinander alle Werte der Menge α an
+for (i ∈ α) {
+    Anweisungen
+}
+
+// For loops can be written with .. syntax and the dots are interpreted as
+// an operator.
+for (int i = 1 .. n) {
+    sum = sum+feld[i];
+}
+
+// New types can be declared.
+type Person = {
+     // Type
+     int id
+     char[1:n] lastName, firstName
+}
+
+// Enumeration
+type Day = ( Monday, Tuesday, Wednesday,
+    Thursday, Friday, Saturday, Sunday )
+
+suche(↓liste[1:n] ↓int länge ↓x ↑int i) {
+    int j
+    j = länge
+    while (j>0 && liste[j]!=x) {
+	j= j-1
+    }
+    i = j
+    // 1≤i≤länge && x==liste[i] || i=0 && x ist nicht in liste enthalten
+}
+
+removeBlanks(↓char[1:n] source ↓int n ↑char[1:m] target ↑ int m) {
+    m = 0
+    for (int i= 1..n) {
+	if (i==1 || source[i] != ' ' || source[i-1] != ' ') {
+	    m = m+1
+	    target[m] = source[i]
+	}
+    }
+}
