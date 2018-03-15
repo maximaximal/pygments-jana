@@ -3,6 +3,12 @@
 This project aims to implement a pygments plugin to highlight
 the algorithm design language [Jana](https://de.wikipedia.org/wiki/Jana_(Informatik)).
 
+## Installing 
+
+### Developer Mode
+
+    sudo python setup.py develop
+
 ## Ressources for writing pygments plugins
 
   * https://stackoverflow.com/questions/22321702/how-to-install-a-new-lexer-in-pygments

@@ -9,7 +9,7 @@ from pygments import unistring as uni
 
 class JanaLexer(RegexLexer):
     """
-    For `Java <http://www.sun.com/java/>`_ source code.
+    A lexer for the Jana language: https://de.wikipedia.org/wiki/Jana_(Informatik)
     """
 
     name = 'Jana'
