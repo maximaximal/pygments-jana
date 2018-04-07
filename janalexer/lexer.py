@@ -21,7 +21,7 @@ class JanaLexer(RegexLexer):
 
     tokens = {
         'root': [
-            (r'(?<![(),][ ])([A-Z]|\u2026|\.\.\.)[a-zA-Z0-9.;:,\!\? ]*\n', String.Doc),
+            (r'(?<![(),][ ])([A-Z]|\u2026|\.\.\.)[a-zA-Z0-9.;:,\!\? ]*[.:;,\!\?]\n', String.Doc),
             (r'\s+', Text),
             (r'//.*?\n', Comment.Single),
             (r'/\*.*?\*/', Comment.Multiline),
